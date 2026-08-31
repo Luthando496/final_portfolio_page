@@ -41,7 +41,7 @@ function App() {
     {
       title: 'Next Blog',
       description: 'Cutting-edge blog project using Next.js with Supabase database management.',
-      link: 'https://blog2go.onrender.com/',
+      link: 'https://blogsforyou-luthando496s-projects.vercel.app/',
       tags: ['Next.js', 'Supabase', 'Blog'],
       image:"/assets/blog.png"
     },
@@ -172,6 +172,9 @@ function App() {
 
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-2 space-y-6">
+              <div className="w-64 h-64 rounded-2xl overflow-hidden border-2 border-teal-400 mb-8">
+                <img src="/assets/luthando_image.png" alt="Luthando Didiza" className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-3xl font-semibold">
                 I'm <span className="text-teal-400">Luthando Didiza</span>, a Web Developer
               </h3>
@@ -195,7 +198,7 @@ function App() {
                 </div>
                 <div className="border-b border-slate-700 pb-4">
                   <span className="text-teal-400 font-semibold">Age:</span>
-                  <p className="text-slate-300 mt-1">{2025 - 2001}</p>
+                  <p className="text-slate-300 mt-1">{2026 - 2001}</p>
                 </div>
                 <div className="pb-4">
                   <span className="text-teal-400 font-semibold">From:</span>
