@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+header{
+  background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.7)) ,url('/assets/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-list{
+  border-bottom: 1px solid rgba(33, 174, 179, 0.7);
+}
+
+.about-me{
+  background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9));
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.skills h1{
+font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+
+}
