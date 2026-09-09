@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Luthando Didiza Frontend Developer" >
-    <meta property="og:description" content="Luthando Didiza Frontend Developer personal portfolio site" >
-    <meta property="og:type" content="website" >
-    <meta name="description" content="Luthando Didiza Frontend Developer personal portfolio site"/>
-    <title>Luthando Didiza || Portfolio Site</title>
+    <meta name="theme-color" content="#04060c" />
+    <meta
+      name="description"
+      content="Luthando Didiza — frontend developer building fast, modern, and accessible web experiences."
+    />
+    <meta property="og:title" content="Luthando Didiza · Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Luthando Didiza — clean, fast, responsive web experiences built with React."
+    />
+    <meta property="og:type" content="website" />
+    <title>Luthando Didiza · Frontend Developer</title>
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong scheme.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          document.documentElement.setAttribute('data-theme', stored || 'dark');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
