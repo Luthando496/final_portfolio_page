@@ -1,6 +1,8 @@
 import {
   Code,
+  KeyRound,
   Download,
+  BadgeCheck,
   GraduationCap,
   Mail,
   MapPin,
@@ -16,6 +18,8 @@ const FOCUS_ICONS = {
   code: Code,
   ui: MonitorSmartphone,
   api: Server,
+  iam: KeyRound,
+  server: Server,
 };
 
 export default function About() {
@@ -31,7 +35,7 @@ export default function About() {
                 Nice to meet you — I'm <span className="text-gradient">Luthando.</span>
               </>
             }
-            sub="Frontend-focused developer. I take ideas and turn them into clean, fast, and useful web experiences."
+            sub="Frontend developer transitioning into IT Support — building a career in the Microsoft ecosystem with Entra ID and Windows Server."
           />
         </Reveal>
 
@@ -87,6 +91,9 @@ export default function About() {
                 </a>
                 <span className="inline-flex items-center gap-2 rounded-full border border-line/10 bg-ink/[0.04] px-4 py-2 text-sm text-ink">
                   <GraduationCap size={14} className="text-accent" /> Diploma · Software Development
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm text-accent">
+                  <BadgeCheck size={14} /> Studying SC-300
                 </span>
               </div>
             </Reveal>

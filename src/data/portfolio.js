@@ -1,8 +1,8 @@
 export const profile = {
   firstName: 'Luthando',
   lastName: 'Didiza',
-  role: 'Frontend Developer',
-  roles: ['Frontend Developer', 'IT Support Specialist', 'React Specialist', 'UI Engineer'],
+  role: 'Microsoft IT Support',
+  roles: ['Frontend Developer', 'IT Support Specialist', 'IAM Engineer', 'Microsoft IT Support'],
   email: 'luthandodidza197@gmail.com',
   location: 'Cape Town, South Africa',
   availability: 'Available for new projects',
@@ -15,8 +15,8 @@ export const profile = {
 };
 
 export const bio = [
-  "I'm a frontend-focused web developer from Cape Town with 3+ years of experience helping startups and businesses ship fast, responsive web applications.",
-  "I care about the details that make software feel good — readable code, thoughtful UX, and work delivered on time and on budget.",
+  "I'm a Cape Town developer with 3+ years of frontend experience, now transitioning into IT Support — specifically the Microsoft IT Support ecosystem: Microsoft Entra ID, Active Directory and Windows Server.",
+  "I'm currently doing my IT Support internship at CAPACITI, managing user accounts and permissions, and I'm studying for the SC-300 (Microsoft Identity and Access Administrator) certification. My web background means I bring clean code, clear communication and a product mindset to every support ticket.",
 ];
 
 export const stats = [
@@ -28,19 +28,19 @@ export const stats = [
 
 export const focusAreas = [
   {
+    icon: 'iam',
+    title: 'Identity & access',
+    text: 'Managing users, groups and permissions in Microsoft Entra ID and Active Directory.',
+  },
+  {
+    icon: 'server',
+    title: 'Windows Server',
+    text: 'GPOs, OUs, DNS and DHCP — the building blocks of a well-run Microsoft environment.',
+  },
+  {
     icon: 'code',
     title: 'Frontend & UI',
     text: 'Responsive, accessible interfaces built with React and Tailwind CSS.',
-  },
-  {
-    icon: 'ui',
-    title: 'Modern & minimal',
-    text: 'Clear layouts and subtle motion that guide people, not distract them.',
-  },
-  {
-    icon: 'api',
-    title: 'Backend basics',
-    text: 'Lightweight APIs and data flows with Node.js, Express, and REST.',
   },
 ];
 
