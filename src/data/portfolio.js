@@ -2,7 +2,7 @@ export const profile = {
   firstName: 'Luthando',
   lastName: 'Didiza',
   role: 'Frontend Developer',
-  roles: ['Frontend Developer', 'React Specialist', 'UI Engineer'],
+  roles: ['Frontend Developer', 'IT Support Specialist', 'React Specialist', 'UI Engineer'],
   email: 'luthandodidza197@gmail.com',
   location: 'Cape Town, South Africa',
   availability: 'Available for new projects',
@@ -48,9 +48,6 @@ export const skills = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 80 },
   { name: 'JavaScript', level: 75 },
-  { name: 'React.js', level: 70 },
-  { name: 'Tailwind CSS', level: 60 },
-  { name: 'SASS/SCSS', level: 50 },
 ];
 
 export const technologies = [
@@ -66,6 +63,67 @@ export const technologies = [
   'REST APIs',
   'Vite',
   'Responsive Design',
+];
+
+export const itSkills = [
+  'Windows Server',
+  'Microsoft Entra ID',
+  'DNS',
+  'GPOs',
+  'OUs',
+  'Active Directory',
+  'DHCP',
+  'User & access management',
+];
+
+export const certifications = [
+  {
+    title: 'Google AI Essentials',
+    issuer: 'Google · Coursera',
+    link: 'https://coursera.org/share/afe6b88dbba16267c832e345507d34b9',
+  },
+  {
+    title: 'IT Support',
+    issuer: 'Coursera',
+    link: 'https://coursera.org/share/ac4f58ed9b1b6ed82a56b59c64b7249f',
+  },
+];
+
+export const achievements = [
+  'Completed the Google AI Essentials and IT Support certifications through Coursera.',
+  'Increased sales by 10% at Tech9ne Solutions by turning mockups into live, well-maintained websites.',
+  'Built mobile-first websites with JavaScript frameworks at ComeGetCred Finance.',
+  'Moved from front-end development into IT support, managing identities and access in Active Directory and Microsoft Entra ID.',
+];
+
+export const keyProjects = [
+  {
+    title: 'Portfolio Website',
+    detail:
+      'My personal portfolio at luthandodidiza.co.za — a fast, responsive React and Tailwind site showcasing my projects, experience and skills.',
+    tags: ['React', 'Tailwind', 'Vite'],
+    link: 'https://luthandodidiza.co.za',
+    cta: 'Visit website',
+    kind: 'web',
+  },
+  {
+    title: 'CAPACITI Service Hub',
+    detail:
+      'Enterprise ticket operations platform for logging, tracking and resolving IT support requests in one place.',
+    tags: ['Ticketing', 'IT Support', 'Enterprise'],
+    link: 'https://capaciti-service-hub.ai.studio/',
+    cta: 'View live project',
+    kind: 'web',
+  },
+  {
+    title: 'Ubuntu Innovation',
+    detail:
+      'Open-source project hosted on GitHub — browse the source code, structure and commit history.',
+    tags: ['GitHub', 'Open Source'],
+    link: 'https://github.com/Luthando496/Ubuntu-Innovations',
+    cta: 'View on GitHub',
+    kind: 'github',
+  },
 ];
 
 export const projects = [
@@ -108,36 +166,45 @@ export const projects = [
 
 export const experience = [
   {
-    period: '2023 — Present',
-    role: 'Frontend Developer',
-    company: 'Freelance',
-    description: 'Building responsive web applications with React, Tailwind CSS, and Next.js for clients worldwide.',
+    period: 'Current',
+    current: true,
+    role: 'Digital Associate, IT Support',
+    company: 'CAPACITI',
+    location: 'Cape Town',
+    description:
+      'Managing user accounts and permissions in Active Directory and Microsoft Entra ID, with basic networking (DNS and DHCP).',
+    tags: ['Active Directory', 'Entra ID', 'DNS', 'DHCP'],
   },
   {
-    period: '2022 — 2023',
-    role: 'Intern Developer',
-    company: 'ComegetCred Finance',
-    description: 'Contributed to React-based dashboards and learned advanced state management and API integration.',
+    period: '11/2022 — 02/2023',
+    role: 'Web Developer Intern',
+    company: 'ComeGetCred Finance',
+    location: 'Bloubergstrand',
+    description: 'Built mobile-first sites with JavaScript frameworks.',
+    tags: ['JavaScript', 'Mobile-first'],
+  },
+  {
+    period: '01/2021 — 06/2021',
+    role: 'Web Developer Intern',
+    company: 'Tech9ne Solutions',
+    location: 'Cape Town',
+    description:
+      'Turned mockups into live sites, maintained them and helped increase sales by 10%.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
 
 export const education = [
   {
-    period: '2020 — 2021',
-    role: 'React.js Mastery',
-    company: 'Coursera',
-    description: 'Certificate focused on components, hooks, and modern state management.',
-  },
-  {
-    period: '2019 — 2020',
-    role: 'Frontend Development',
-    company: 'LinkedIn Learning',
-    description: 'Certificate covering HTML, CSS, and JavaScript fundamentals.',
+    period: '2024 — 2026',
+    role: 'Diploma in Software Development',
+    company: 'Rosebank College',
+    description: 'Building a strong foundation in software development principles, web technologies and practical coding.',
   },
   {
     period: '2014 — 2019',
     role: 'Matric Certificate',
     company: 'Mfuleni High School',
-    description: 'Completed secondary education with a focus on technology subjects.',
+    description: 'Completed secondary education.',
   },
 ];

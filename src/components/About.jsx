@@ -86,7 +86,7 @@ export default function About() {
                   <Mail size={14} className="text-accent" /> {profile.email}
                 </a>
                 <span className="inline-flex items-center gap-2 rounded-full border border-line/10 bg-ink/[0.04] px-4 py-2 text-sm text-ink">
-                  <GraduationCap size={14} className="text-accent" /> Diploma · Software Engineering
+                  <GraduationCap size={14} className="text-accent" /> Diploma · Software Development
                 </span>
               </div>
             </Reveal>

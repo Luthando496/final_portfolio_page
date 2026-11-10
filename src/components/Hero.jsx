@@ -60,8 +60,8 @@ export default function Hero() {
 
         <Reveal delay={260}>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-            I craft fast, elegant web experiences for startups and businesses that want to stand
-            out — clear design, clean code, and care in every detail.
+            I build fast, elegant web experiences and keep teams connected and secure as an IT
+            support specialist — Active Directory, Entra ID and clean code, with care in every detail.
           </p>
         </Reveal>
 

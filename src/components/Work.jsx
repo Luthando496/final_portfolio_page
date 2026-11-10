@@ -1,5 +1,5 @@
-import { ArrowRight, ExternalLink, Github } from 'lucide-react';
-import { profile, projects } from '../data/portfolio';
+import { ArrowRight, ExternalLink, Github, Globe, Sparkles } from 'lucide-react';
+import { keyProjects, profile, projects } from '../data/portfolio';
 import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
 
@@ -106,7 +106,66 @@ export default function Work() {
           })}
         </div>
 
-        <Reveal delay={120} className="mt-14 text-center">
+        <Reveal delay={120} className="mt-20">
+          <div className="mb-8 flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-line/10 bg-ink/[0.04] text-accent">
+              <Sparkles size={18} />
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.24em] text-accent">Key projects</p>
+              <h3 className="mt-1 font-display text-2xl font-bold text-ink">Highlights &amp; open source</h3>
+            </div>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {keyProjects.map((item) => {
+              const Icon = item.kind === 'github' ? Github : Globe;
+              return (
+                <a
+                  key={item.title}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onMouseMove={trackPointer}
+                  className="spotlight spotlight-card glass glass-card group flex flex-col rounded-3xl p-6"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">
+                      <Icon size={22} />
+                    </div>
+                    <ExternalLink
+                      size={16}
+                      className="text-soft transition-colors duration-300 group-hover:text-accent"
+                    />
+                  </div>
+                  <h4 className="mt-5 font-display text-xl font-bold text-ink transition-colors duration-300 group-hover:text-accent">
+                    {item.title}
+                  </h4>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.detail}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-accent/15 bg-accent/10 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-accent"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                    {item.cta}
+                    <ArrowRight
+                      size={15}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </Reveal>
+
+        <Reveal delay={150} className="mt-14 text-center">
           <a
             href={profile.socials.github}
             target="_blank"
